@@ -1,48 +1,39 @@
-new Swiper('.swiper', {
-	speed: 1000,
-	loop: true,
-	updateOnWindowResize: true,
-	pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-	},
+const swiper = new Swiper('.swiper', {
 	breakpoints: {
-			320: {
-					slidesPerView: 1.3,
-					spaceBetween: 20
-			},
-			360: {
-					slidesPerView: 1.47,
-					spaceBetween: 20
-			},
-			390:{
-					slidesPerView: 1.65,
-					spaceBetween: 20
-			},
-			600: {
-					enabled: false
-			}
+		0: {
+			slidesPerView: 1,
+			enabled: true,
+		},
+		768: {
+			enabled: false,
+		}
+	},
 
-	}
+	pagination: {
+		el: '.swiper-pagination',
+	},
 });
 
-const showAllButton = document.querySelector('.brand__show-next')
-const brandContainer = document.querySelector('.brand__swiper')
-showAllButton.addEventListener('click', function () {
-	change();
- brandContainer.classList.toggle('brand__swiper-big');
- showAllButton.classList.toggle('brand__show-next-arrows-down');
-});
+let showMore = document.querySelector('.show-more');
 
-function change()
-{
-	if (showAllButton.innerText=="Показать все") showAllButton.innerText = "Скрыть";
-	else showAllButton.innerText = "Показать все";
-};
+showMore.addEventListener('click', () => {
+	let hiddenButton = document.querySelectorAll('[data-hidden="true"]');
+	let hiddenPcButton = document.querySelectorAll('[data-hidden-pc="true"]');
 
-function updatePage (){
-	if (window.innerWidth == 500){
-			Swiper.update()
+	hiddenButton.forEach(element => {
+		element.classList.toggle('hidden');
+	});
+	hiddenPcButton.forEach(element => {
+		element.classList.toggle('hidden-pc');
+	});
+
+	if (showMore.classList.contains("show-more--decoration-rotate")) {
+		showMore.textContent = "Показать все";
+		showMore.classList.remove("show-more--decoration-rotate");
+
+	} else {
+		showMore.textContent = "Скрыть";
+		showMore.classList.add("show-more--decoration-rotate");
 	}
-};
-setInterval(updatePage(), 1000);
+
+})

@@ -6,83 +6,75 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="TTLakes/stylesheet.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+	<link rel="stylesheet" href="style/swiper-bundle.css">
 	<link rel="stylesheet" href="style/style.css">
 	<title>Макет 1.5</title>
 </head>
 
-<body>
-	<div class="brand">
-		<div class="brand__title">
-			<h1 class="title">Ремонт техники различных брендов</h1>
-		</div>
-		<div class="brand__swiper swiper">
-			<div class="brand__gradient"></div>
-			<div class="brand__swiper-wraper swiper-wrapper">
-
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/lenovo.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-					</button>
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/samsung.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/apple.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/viewsonic.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/bosch.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/hp.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/acer.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/sony.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/lenovo.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/samsung.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-				<div class="brand__swiper-slide swiper-slide">
-					<img src="img/apple.png">
-					<button class="button__lenovo button">
-						<img src="img/dropdown.svg">
-				</div>
-			</div>
-			<div class="swiper-pagination"></div>
-		</div>
-		<button class="brand__show-next">Показать все</button>
+<body class="brands">
+	<div class="title title--background title--padding">
+		<h1 class="title-text">Ремонт техники различных брендов</h1>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	<div class="brands-container swiper ">
+		<div class="swiper-wrapper brands-container--flex">
+			<a class="brand-item brand-item--background-image brand-item--flex swiper-slide " href="#">
+				<img class="logo" src="img/lenovo.png" alt="lenovo">
+			</a>
+
+			<a class="brand-item brand-item--background-image brand-item--flex swiper-slide" href="#">
+				<img class="logo" src="img/samsung.png" alt="samsung">
+			</a>
+
+			<a class="brand-item brand-item--background-image brand-item--flex swiper-slide" href="#">
+				<img class="logo" src="img/apple.png" alt="apple">
+			</a>
+
+			<a class="brand-item brand-item--background-image brand-item--flex swiper-slide" href="#">
+				<img class="logo" src="img/viewsonic.png" alt="viewsonic">
+			</a>
+
+			<a class="brand-item brand-item--background-image brand-item--flex swiper-slide" href="#">
+				<img class="logo" src="img/bosch.png" alt="bosch">
+			</a>
+
+			<a class="brand-item brand-item--background-image brand-item--flex swiper-slide" href="#">
+				<img class="logo" src="img/hp.png" alt="hp">
+			</a>
+
+			<a data-hidden="true" class="brand-item brand-item--background-image brand-item--flex swiper-slide hidden"
+				href="#">
+				<img class="logo" src="img/acer.png" alt="acer">
+			</a>
+
+			<a data-hidden="true" class="brand-item brand-item--background-image brand-item--flex swiper-slide hidden"
+				href="#">
+				<img class="logo" src="img/sony.png" alt="sony">
+			</a>
+
+			<a data-hidden-pc="true" class="brand-item brand-item--background-image brand-item--flex swiper-slide hidden-pc"
+				href="#">
+				<img class="logo" src="img/lenovo.png" alt="lenovo">
+			</a>
+
+			<a data-hidden-pc="true" class="brand-item brand-item--background-image brand-item--flex swiper-slide hidden-pc"
+				href="#">
+				<img class="logo" src="img/samsung.png" alt="samsung">
+			</a>
+
+			<a data-hidden-pc="true" class="brand-item brand-item--background-image brand-item--flex swiper-slide hidden-pc"
+				href="#">
+				<img class="logo" src="img/apple.png" alt="apple">
+			</a>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<button class="show-more button show-more--decoration">Показать все</button>
+
+	<script src="js/swiper-bundle.js"></script>
 	<script src="js/main.js"></script>
+
 </body>
+
 
 </html>
