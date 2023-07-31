@@ -63,7 +63,7 @@
 }
 
 .brand-item--background-image {
-	background: white url(/img/go.svg) no-repeat 180px;
+	background: white url(../img/go.svg) no-repeat 180px;
 }
 
 .show-more {
@@ -114,7 +114,7 @@
 	}
 
 	.show-more--decoration::before {
-		background: url("/img/expand.svg");
+		background: url("../img/expand.svg");
 		content: "";
 		display: block;
 		position: absolute;
