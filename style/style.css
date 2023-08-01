@@ -13,7 +13,6 @@
 }
 
 .title {
-	height: 56px;
 	border-top: 2px solid rgba(217, 255, 245, 1);
 }
 
@@ -22,11 +21,12 @@
 }
 
 .title--padding {
-	padding: 16px 16px 32px;
+	padding: 16px 0px 16px 24px;
 
 }
 
 .title-text {
+	justify-content: center;
 	color: #7E7E82;
 	font-family: TT Lakes;
 	font-size: 16px;
