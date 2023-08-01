@@ -71,6 +71,14 @@
 	cursor: pointer;
 }
 
+.swiper-pagination {
+	transform: translateX(-24px);
+}
+
+:root {
+  --swiper-theme-color: #B5B6BC;
+}
+
 @media screen and (max-width: 767px) {
 	.brands-container {
 		padding-bottom: 36px;
