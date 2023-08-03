@@ -31,6 +31,7 @@ const options = {
 
 	pagination: {
 		el: ".swiper-pagination",
+		clickable: true,
 	},
 };
 
